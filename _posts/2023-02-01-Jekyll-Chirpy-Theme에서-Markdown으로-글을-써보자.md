@@ -83,12 +83,12 @@ _그림자 효과가 적용된 사진_
 ## 코드블록
 <!-- 코드 언어를 나오게 할 수도 있다.(소문자로 해야하는듯) -->
 ```markdown
-    ```c++
-    int a = 10;
-    int b = 5;
-    int c = a + b;
-    printf(c);
-    ```
+```c++
+int a = 10;
+int b = 5;
+int c = a + b;
+printf(c);
+```
 ```
 
 ## Youtube embed
