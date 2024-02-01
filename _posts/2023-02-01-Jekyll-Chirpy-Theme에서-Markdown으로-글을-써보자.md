@@ -18,6 +18,7 @@ title: TITLE # 파일명으로 대체 가능
 date: YYYY-MM-DD HH:MM:SS +/-TTTT # 파일명으로 대체 가능
 categories: [TOP_CATEGORIE, SUB_CATEGORIE]
 tags: [TAG] # TAG names should always be lowercase
+image: /path/to/image # 링크로도 가능
 ---
 ```
 
@@ -62,16 +63,30 @@ tags: [TAG] # TAG names should always be lowercase
 - B
 - C
 
+```markdown
+- A
+- B
+- C
+```
+{: .nolineno}
+
 ### Ordered List
 1. A
 2. B
 3. C
 
+```markdown
+1. A
+2. B
+3. C
+```
+{: .nolineno}
+
 ## 이미지
 ![](https://i.esdrop.com/d/ZklKfna5T3.jpg)
 _강아지 사진 설명_
 ![](https://i.esdrop.com/d/ZklKfna5T3.jpg){: .shadow}
-_그림자가 적용된 사진_
+_그림자 효과가 적용된 사진_
 
 ```markdown
 ![](https://i.esdrop.com/d/ZklKfna5T3.jpg)
@@ -83,14 +98,16 @@ _그림자 효과가 적용된 사진_
 ## 코드블록
 <!-- 코드 언어를 나오게 할 수도 있다.(소문자로 해야하는듯) -->
 ```markdown
-```c++
-int a = 10;
-int b = 5;
-int c = a + b;
-printf(c);
+    ```c++
+    int a = 10;
+    int b = 5;
+    int c = a + b;
+    printf(c);
+    ```
+    <!--{: .nolineno} 라고 쓰면 줄 번호가 나오지 않는다.-->
 ```
-```
+> 들여쓰기로 하고 싶지 않았는데 그렇지 않으면 아래의 \```이 표기되지 않는다. 또한 언어를 적을 때엔 소문자로 적는다.
 
 ## Youtube embed
 {%include embed/youtube.html id="jNQXAC9IVRw" %}
-> 왜인지 모르겠지만 코드 블록으로 마크다운으로 쓴 게 그대로 보이지 않음.
+> 왜인지 모르겠지만 코드 블록으로 마크다운으로 쓴 게 그대로 보이지 않는다.
